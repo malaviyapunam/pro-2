@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-4</title>
+</head>
+<body></body>
+
+<script>
+
+function checkAgeGroup() {
+    const userInput = prompt("Enter your age:");
+    const age = parseInt(userInput, 10);
+
+    if (!isNaN(age) && age >= 0) {
+        let category;
+
+        if (age <= 12) {
+            category = "Child";
+        } else if (age <= 19) {
+            category = "Teenager";
+        } else if (age <= 64) {
+            category = "Adult";
+        } else {
+            category = "Senior";
+        }
+
+        console.log(category);
+    } else {
+        console.log("Please enter a valid age.");
+    }
+}
+
+checkAgeGroup()
+
+
+</script>
+</html>

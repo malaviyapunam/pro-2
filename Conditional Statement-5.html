@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>q-5</title>
+</head>
+<body></body>
+<script>
+
+function DiscountEligibility() {
+    const totalAmount = parseFloat(prompt("Enter your total purchase amount:"));
+    const isMember = prompt("Are you a member of the loyalty program? (yes/no)").toLowerCase() === "yes";
+
+    if (totalAmount > 0) {
+        if (totalAmount > 100 && isMember) {
+            console.log("Discount Applied");
+        } else {
+            console.log("No Discount");
+        }
+    } else {
+        console.log("Please enter a valid purchase amount.");
+    }
+}
+
+DiscountEligibility();
+</script>
+</html>
